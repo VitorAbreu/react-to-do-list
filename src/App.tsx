@@ -1,3 +1,3 @@
 export default function App() {
-  return <>Olá Mundo</>;
+  return <div className="text-pink-base">Olá Mundo</div>;
 }
