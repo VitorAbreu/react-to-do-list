@@ -13,6 +13,7 @@ import SpinnerIcon from "./assets/icons/Spinner.svg?react";
 import XIcon from "./assets/icons/X.svg?react";
 import Badge from "./components/badge";
 import Button from "./components/button";
+import ButtonIcon from "./components/button-icon";
 
 export default function App() {
   return (
@@ -36,6 +37,11 @@ export default function App() {
       </div>
       <div className="flex gap-1">
         <Button icon={PlusIcon}>Nova tarefa</Button>
+      </div>
+      <div className="flex gap-1">
+        <ButtonIcon icon={PlusIcon} />
+        <ButtonIcon icon={PlusIcon} variant="secondary" />
+        <ButtonIcon icon={PlusIcon} variant="tertiary" />
       </div>
     </div>
   );
