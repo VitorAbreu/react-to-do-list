@@ -14,6 +14,7 @@ import XIcon from "./assets/icons/X.svg?react";
 import Badge from "./components/badge";
 import Button from "./components/button";
 import ButtonIcon from "./components/button-icon";
+import InputText from "./components/input";
 
 export default function App() {
   return (
@@ -42,6 +43,9 @@ export default function App() {
         <ButtonIcon icon={PlusIcon} />
         <ButtonIcon icon={PlusIcon} variant="secondary" />
         <ButtonIcon icon={PlusIcon} variant="tertiary" />
+      </div>
+      <div className="flex gap-1">
+        <InputText />
       </div>
     </div>
   );
