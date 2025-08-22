@@ -15,6 +15,7 @@ import Badge from "./components/badge";
 import Button from "./components/button";
 import ButtonIcon from "./components/button-icon";
 import InputText from "./components/input";
+import Card from "./components/card";
 
 export default function App() {
   return (
@@ -46,6 +47,9 @@ export default function App() {
       </div>
       <div className="flex gap-1">
         <InputText />
+      </div>
+      <div className="flex gap-1">
+        <Card size="md">Olá mundo</Card>
       </div>
     </div>
   );
