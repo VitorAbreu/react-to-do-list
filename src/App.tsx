@@ -18,6 +18,7 @@ import InputText from "./components/input";
 import Card from "./components/card";
 import InputCheckbox from "./components/input-checkbox";
 import Container from "./components/container";
+import Skeleton from "./components/skeleton";
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
         <div className="flex gap-1">
           <Badge variant={"secondary"}>5</Badge>
           <Badge variant={"primary"}>2 de 5</Badge>
+          <Badge loading>a</Badge>
         </div>
         <div className="flex gap-1">
           <Button icon={PlusIcon}>Nova tarefa</Button>
@@ -56,6 +58,13 @@ export default function App() {
         </div>
         <div className="flex gap-1">
           <InputCheckbox />
+
+          <InputCheckbox loading />
+        </div>
+        <div className="space-y-2">
+          <Skeleton className="h-4" />
+          <Skeleton className="h-4" />
+          <Skeleton className="h-4 w-96" />
         </div>
       </div>
     </Container>
